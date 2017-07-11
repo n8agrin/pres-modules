@@ -37,6 +37,7 @@ function cube (n) {
 
 export default cube
 ```
+@[5]
 
 ---
 
