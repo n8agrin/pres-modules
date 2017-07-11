@@ -49,8 +49,8 @@ Until then we have:
 ---
 #### What I'm Intentionally Leaving Out
 
-* CommonJS - Node Format
-* AMD - OG Module Format
+* CommonJS - Node
+* AMD - OG Modules
 * Your ex coworker's better async module library confusingly called Yet Another Module Library or YAML-DOS
 
 ![maru hiding](https://media.giphy.com/media/aA2kuwtG7Xnt6/giphy.gif)
@@ -145,7 +145,7 @@ describe('my controller', function() {
 
 * Easier to reason about small parts of the app
 * Try out new technologies
-* Refactor without (as much) fear
+* Fearless Refactoring
 
 ![maru slo mo](https://media.giphy.com/media/W2MbjG64qkiMo/giphy.gif)
 
@@ -180,6 +180,8 @@ angular.module('looker.utils', ['looker.api'])
 
 ---
 ## Questions?
+
+![maru in the box](https://media.giphy.com/media/z7pyalZF50hZ6/giphy.gif)
 
 ---
 #### Resources
