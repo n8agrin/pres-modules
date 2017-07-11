@@ -57,7 +57,18 @@ let rateOfChange = cube(4)
   * Partition code
   * Encapsulation
 
-(add some code that shows how encapsulation works)
+```
+function powers (base) {
+  return function (n) {
+    return Math.pow(n, base)    
+  }
+}
+
+let square = powers(2)
+let cube = powers(3)
+
+export {square, cube}
+```
 
 ---
 
