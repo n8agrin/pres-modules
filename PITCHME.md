@@ -74,9 +74,11 @@ export {square, cube}
 
 # Discoverable
  * Easy to find source
- * Compatible with good tools
+ * Makes tooling better
 
-(demo the linkage with the editor)
+(demo this!)
+
+![Mari](https://media.giphy.com/media/Ww6Hdz0L3CxfW/giphy.gif)
 
 --- 
 
