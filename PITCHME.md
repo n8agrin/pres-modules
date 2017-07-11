@@ -32,7 +32,7 @@ ECMAScript 2015 (ES6) includes native module syntax!
 ```
 import foo from 'blah'
 ...
-export default bar
+export {bar}
 ```
 
 But no browser fully implements it yet [1] :( 
@@ -65,7 +65,7 @@ function cube (n) {
   return Math.pow(n, 3)
 }
 
-export default cube
+export {cube}
 ```
 @[6]
 
@@ -75,7 +75,7 @@ export default cube
 Consuming a Module
 
 ```
-import cube from './powers'
+import {cube} from './powers'
 
 let rateOfChange = cube(4)
 ```
@@ -179,7 +179,8 @@ angular.module('looker.utils', ['looker.api'])
 ```
 
 ---
-## Questions?
+## Use Modules!
+#### Questions?
 
 ![maru in the box](https://media.giphy.com/media/z7pyalZF50hZ6/giphy.gif)
 
