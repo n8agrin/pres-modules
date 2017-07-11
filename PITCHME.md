@@ -1,5 +1,5 @@
 # MODULES!
-### aka Javascript grows up a wee bit
+### A light-hearted conversation about a new-ish technology
 
 ![cat](https://media.giphy.com/media/Sjj8NXm7E10qs/giphy.gif)
 
@@ -49,14 +49,14 @@ Until then we have:
 ---
 #### What I'm Intentionally Leaving Out
 
-* CommonJS
-* AMD
+* CommonJS - Node Format
+* AMD - OG Module Format
 * Your ex coworker's better async module library confusingly called Yet Another Module Library or YAML-DOS
 
 ![maru hiding](https://media.giphy.com/media/aA2kuwtG7Xnt6/giphy.gif)
 
 ---
-# Simple!
+## Simple!
 
 Creating a Module
 ```
@@ -67,10 +67,10 @@ function cube (n) {
 
 export default cube
 ```
-@[5]
+@[6]
 
 ---
-# Simple!
+## Simple!
 
 Consuming a Module
 
@@ -82,7 +82,7 @@ let rateOfChange = cube(4)
 @[1]
 
 ---
-# Predictable
+## Predictable
   * Partition code
   * Encapsulation
 
@@ -101,7 +101,7 @@ export {square, cube}
 ```
 
 ---
-# Discoverable
+## Discoverable
  * Easy to find source
  * Makes tooling better
 
@@ -110,7 +110,7 @@ export {square, cube}
 ![Mari](https://media.giphy.com/media/Ww6Hdz0L3CxfW/giphy.gif)
 
 --- 
-# Testable
+## Testable
 * Modules are singletons
 * Easy to mock
 
@@ -132,28 +132,61 @@ describe('my controller', function() {
 ```
 
 ---
-# Performance
+## Performance
 
-* Allows bundlers to build exactly the code used
-* ES6 module syntax provides for extra neat optimizations (Tree shaking)
+* Allows Webpack to package exactly the code used
+* ES6 module syntax provides for extra neat optimizations (Tree Shaking)
+* Fewer bytes means more performance
 
 (demo!)
 
 ---
-
-# Work Faster
+## Work Faster
 
 * Easier to reason about small parts of the app
 * Try out new technologies
-* Refactor without fear
+* Refactor without (as much) fear
 
 ![maru slo mo](https://media.giphy.com/media/W2MbjG64qkiMo/giphy.gif)
 
 ---
-
-# Angular's DI and/or/vs Modules
-
-(explain how Angular works and how to use modules with or instead)
+# BONUS!
 
 ---
-# Questions?
+## Async Import
+
+Stage 3 of the ECMAScript proposal process
+
+```
+import('./powers')
+  .then(module => {
+    let calculation = module.cube(2)
+  })
+```
+
+---
+#### Angular's Dependency Injection vs Modules
+
+```
+import {cube} from './powers' 
+
+angular.module('looker.utils', ['looker.api'])
+  .factory('settings', function(CurrentUser) {
+    let userName = CurrentUser.currentUser().name
+    let favoriteNumberCubed = cube(CurrentUse.currentUser().favoriteNumber)
+    ...
+  })
+```
+
+---
+## Questions?
+
+---
+#### Resources
+
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export
+* https://github.com/tc39/proposal-dynamic-import
+* https://jakearchibald.com/2017/es-modules-in-browsers/
+
+
