@@ -4,14 +4,14 @@
 ![cat](https://media.giphy.com/media/Sjj8NXm7E10qs/giphy.gif)
 
 ---
-# Why Modules?
+## Why Modules?
 * Simple!
 * Predictable!
 * Discoverable!
 * Testable!
 
 ---
-# History
+## History
 
 Concat everything into a single file - YOLO!
 
@@ -24,7 +24,7 @@ Note:
 * possibly trample globals in your library's name space, eg `noConflict`
 
 ---
-# Modernity
+## Modernity
 
 ECMAScript 2015 (ES6) includes native module syntax!
 
@@ -45,7 +45,7 @@ Until then we have:
 [1] https://jakearchibald.com/2017/es-modules-in-browsers/
 
 ---
-# What I'm Intentionally Leaving Out
+## What I'm Intentionally Leaving Out
 
 * CommonJS
 * AMD
