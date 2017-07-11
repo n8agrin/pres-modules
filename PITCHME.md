@@ -18,6 +18,7 @@ Concat everything into a single file - YOLO!
 ![cat box](https://media.giphy.com/media/56xijcnShy5sA/giphy.gif)
 
 Note:
+
 * giant payloads with mostly unused code
 * hard to reuse basic functions
 * end up with lots of duplicate code
@@ -36,13 +37,14 @@ export default bar
 
 But no browser fully implements it yet [1] :( 
 
-Until then we have:
+[1] https://jakearchibald.com/2017/es-modules-in-browsers/
 
+Note:
+
+Until then we have:
 + Webpack
 + Browserify
 + Rollup 
-
-[1] https://jakearchibald.com/2017/es-modules-in-browsers/
 
 ---
 ## What I'm Intentionally Leaving Out
