@@ -15,8 +15,10 @@
 
 # History
 
-* concat everything into a single file
-* WHAT COULD GO WRONG?
+Step 1: concat everything into a single file
+Step 2: Deploy 
+
+WHAT COULD GO WRONG?
 
 ![cat box](https://media.giphy.com/media/56xijcnShy5sA/giphy.gif)
 
