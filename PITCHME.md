@@ -47,7 +47,7 @@ Until then we have:
 + Rollup 
 
 ---
-## What I'm Intentionally Leaving Out
+#### What I'm Intentionally Leaving Out
 
 * CommonJS
 * AMD
