@@ -14,11 +14,13 @@
 ---
 
 # History
-* concat everything into a single file!
+* concat everything into a single file
+* WHAT COULD GO WRONG?
 * giant payloads with mostly unused code
 * hard to reuse basic functions
-* possibly trample globals in your library's name space, eg `noConflict`
 * end up with lots of duplicate code
+* possibly trample globals in your library's name space, eg `noConflict`
+![cat box](https://media.giphy.com/media/56xijcnShy5sA/giphy.gif)
 
 ---
 
