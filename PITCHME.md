@@ -60,6 +60,7 @@ Until then we have:
 
 Creating a Module
 ```
+//-- powers.js
 function cube (n) { 
   return Math.pow(n, 3)
 }
@@ -74,19 +75,19 @@ export default cube
 Consuming a Module
 
 ```
-import cube from './math-utils'
+import cube from './powers'
 
 let rateOfChange = cube(4)
 ```
 @[1]
 
 ---
-
 # Predictable
   * Partition code
   * Encapsulation
 
 ```
+//-- powers.js
 function powers (base) {
   return function (n) {
     return Math.pow(n, base)    
@@ -100,7 +101,6 @@ export {square, cube}
 ```
 
 ---
-
 # Discoverable
  * Easy to find source
  * Makes tooling better
@@ -110,25 +110,44 @@ export {square, cube}
 ![Mari](https://media.giphy.com/media/Ww6Hdz0L3CxfW/giphy.gif)
 
 --- 
-
 # Testable
 * Modules are singletons
+* Easy to mock
 
-(show writing a simple test in our codebase)
+```
+//-- my_complex_controller.test.js
+import {cube} from './powers'
+import myComplexCtrl from './my_complex_controller' 
+ 
+describe('my controller', function() {
+  beforeEach(function() {
+    spyOn(cube)
+  })
+  it ('should call cube', function() {
+    myComplexCtrl.doWork()
+    expect(cube).toHaveBeenCalled()
+  })
+})
+
+```
 
 ---
-
 # Performance
 
-(talk about packaging only what you need and show the admin/connections page)
-(Webpack 3 unwrapping maybe)
-(Tree shaking silliness)
+* Allows bundlers to build exactly the code used
+* ES6 module syntax provides for extra neat optimizations (Tree shaking)
+
+(demo!)
 
 ---
 
 # Work Faster
 
-Make it easy to include whole new libraries
+* Easier to reason about small parts of the app
+* Try out new technologies
+* Refactor without fear
+
+![maru slo mo](https://media.giphy.com/media/W2MbjG64qkiMo/giphy.gif)
 
 ---
 
@@ -137,8 +156,4 @@ Make it easy to include whole new libraries
 (explain how Angular works and how to use modules with or instead)
 
 ---
-
-# Modules vs Components
-
-* Components are a chunk of reusable UI code
-* Components use the module syntax to import their dependencies and export their utilities
+# Questions?
