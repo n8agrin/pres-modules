@@ -1,6 +1,8 @@
 # MODULES!
 ### aka Javascript grows up a wee bit
 
+![cat](https://media.giphy.com/media/Sjj8NXm7E10qs/giphy.gif)
+
 ---
 
 # Why Modules?
@@ -8,8 +10,6 @@
 * Predictable!
 * Discoverable!
 * Testable!
-
-![cat](https://media.giphy.com/media/Sjj8NXm7E10qs/giphy.gif)
 
 ---
 
