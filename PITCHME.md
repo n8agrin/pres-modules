@@ -27,9 +27,9 @@ Note:
 * possibly trample globals in your library's name space, eg `noConflict`
 
 ---
-
 # Simple!
 
+Creating a Module
 ```
 function cube (n) { 
   return Math.pow(n, 3)
@@ -38,6 +38,18 @@ function cube (n) {
 export default cube
 ```
 @[5]
+
+---
+# Simple!
+
+Consuming a Module
+
+```
+import cube from './math-utils'
+
+let rateOfChange = cube(4)
+```
+@[1]
 
 ---
 
