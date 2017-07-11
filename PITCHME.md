@@ -26,7 +26,7 @@ Note:
 ---
 # Modernity
 
-ECMAScript 2015 (ES6) introduces native module syntax!
+ECMAScript 2015 (ES6) includes native module syntax!
 
 ```
 import foo from 'blah'
@@ -34,9 +34,13 @@ import foo from 'blah'
 export default bar
 ```
 
-But no browser fully implements it yet [1] :(
+But no browser fully implements it yet [1] :( 
 
-Until then Webpack, Browserify, Rollup, etc make it possible to leverage module syntax. 
+Until then we have:
+
++ Webpack
++ Browserify
++ Rollup 
 
 [1] https://jakearchibald.com/2017/es-modules-in-browsers/
 
