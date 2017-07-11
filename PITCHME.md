@@ -4,7 +4,6 @@
 ![cat](https://media.giphy.com/media/Sjj8NXm7E10qs/giphy.gif)
 
 ---
-
 # Why Modules?
 * Simple!
 * Predictable!
@@ -12,12 +11,9 @@
 * Testable!
 
 ---
-
 # History
 
-Concat everything into a single file
-
-YOLO!
+Concat everything into a single file - YOLO!
 
 ![cat box](https://media.giphy.com/media/56xijcnShy5sA/giphy.gif)
 
@@ -26,6 +22,32 @@ Note:
 * hard to reuse basic functions
 * end up with lots of duplicate code
 * possibly trample globals in your library's name space, eg `noConflict`
+
+---
+# Modernity
+
+ECMAScript 2015 (ES6) introduces native module syntax!
+
+```
+import foo from 'blah'
+...
+export default bar
+```
+
+But no browser fully implements it yet [1] :(
+
+Until then Webpack, Browserify, Rollup, etc make it possible to leverage module syntax. 
+
+[1] https://jakearchibald.com/2017/es-modules-in-browsers/
+
+---
+# What I'm Intentionally Leaving Out
+
+* CommonJS
+* AMD
+* Your ex coworker's better async module library confusingly called Yet Another Module Library or YAML-DOS
+
+![maru hiding](https://media.giphy.com/media/aA2kuwtG7Xnt6/giphy.gif)
 
 ---
 # Simple!
