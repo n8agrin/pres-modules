@@ -30,7 +30,13 @@ Note:
 
 # Simple!
 
-(add some code about how to make a module, syntax)
+```ecmascript 6
+function cube (n) { 
+  return Math.pow(n, 3)
+}
+
+export default cube
+```
 
 ---
 
