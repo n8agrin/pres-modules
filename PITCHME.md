@@ -30,7 +30,7 @@ Note:
 
 # Simple!
 
-```ecmascript 6
+```
 function cube (n) { 
   return Math.pow(n, 3)
 }
